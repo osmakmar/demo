@@ -69,5 +69,15 @@ public class ScoreKeeperTest {
         scoreKeeper.scoreTeamB3();
         assertEquals("000:006", scoreKeeper.getScore());
     }
+
+    @Test
+    public void testMultipleScoresBothTeams() {
+        scoreKeeper.scoreTeamA3();
+        scoreKeeper.scoreTeamA3();
+        scoreKeeper.scoreTeamA2();
+        scoreKeeper.scoreTeamB2();
+        scoreKeeper.scoreTeamB2();
+        assertEquals("008:004", scoreKeeper.getScore());
+    }
 }
 
