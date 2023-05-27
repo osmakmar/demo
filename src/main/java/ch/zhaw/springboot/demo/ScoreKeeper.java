@@ -8,5 +8,9 @@ public class ScoreKeeper {
         scoreTeamB = 0;
     }
 
+    public String getScore() {
+        return String.format("%03d:%03d", scoreTeamA, scoreTeamB);
+    }
+
    
 }
