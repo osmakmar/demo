@@ -12,5 +12,17 @@ public class ScoreKeeper {
         return String.format("%03d:%03d", scoreTeamA, scoreTeamB);
     }
 
+    public void scoreTeamA1() {
+        scoreTeamA += 1;
+    }
+
+    public void scoreTeamA2() {
+        scoreTeamA += 2;
+    }
+
+    public void scoreTeamA3() {
+        scoreTeamA += 3;
+    }
+
    
 }
